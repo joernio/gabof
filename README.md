@@ -2,6 +2,8 @@
 
 generate a buch of files
 
+! this is experimental code. no guarantees
+
 ## compile with
 
 ```
