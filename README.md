@@ -1,6 +1,6 @@
 ## gabof
 
-generate a buch of file
+generate a buch of files
 
 ## compile with
 
