@@ -1,6 +1,6 @@
 ## gabof
 
-generate a buch of files
+generate a bunch of files
 
 ! this is experimental code. no guarantees
 
