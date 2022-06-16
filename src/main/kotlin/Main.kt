@@ -20,7 +20,7 @@ class App : CliktCommand() {
     private val packageNameForGeneratedFiles = "gabof"
 
     private val defaultNumberOfFnsPerFile = 100
-    private val numberOfFnsFile: Int by option(help = "Number of functions per file").int().default(defaultNumberOfFnsPerFile)
+    private val numberOfFnsPerFile: Int by option(help = "Number of functions per file").int().default(defaultNumberOfFnsPerFile)
     private val defaultNumberOfPrintlnsPerFn = 100
     private val numberOfPrintlnsPerFn: Int by option(help = "Number of println expressions per function").int().default(defaultNumberOfPrintlnsPerFn)
     // TODO: add flag "language" - for Kotlin, kotlin-poet, for Java, java-poet
@@ -53,7 +53,7 @@ class App : CliktCommand() {
         for (fileNo in 1..numberOfFiles) {
             val fileName = "file$fileNo"
             val kotlinFile = FileSpec.builder(packageNameForGeneratedFiles, fileName)
-            (1..numberOfFnsFile).forEach {
+            (1..numberOfFnsPerFile).forEach {
                 val fnName = "fn${fileNo}_$it"
                 val fnSpec = FunSpec.builder(fnName).returns(Int::class)
                 (1..numberOfPrintlnsPerFn).forEach { fnSpec.addStatement("println(41414141)") }
