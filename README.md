@@ -43,7 +43,7 @@ Usage: app [OPTIONS] OUTDIR
 
 Options:
   --number-of-files INT            Number of files
-  --number-of-fns-file INT         Number of functions per file
+  --number-of-fns-per-file INT     Number of functions per file
   --number-of-printlns-per-fn INT  Number of println expressions per function
   -h, --help                       Show this message and exit
 ```
