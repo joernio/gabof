@@ -26,6 +26,11 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+
+tasks.withType<Wrapper> {
+  gradleVersion = "7.4.2"
+}
+
 application {
     mainClass.set("MainKt")
 }
