@@ -7,7 +7,7 @@ generate a bunch of files
 ## generate executable jar
 
 ```
-./gradlew jar
+gradle wrapper && ./gradlew jar
 ```
 
 ## example usage
